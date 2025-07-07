@@ -52,6 +52,8 @@ class TigerOpenClient:
                 file_handler.setFormatter(LOG_FORMATTER)
                 logger.addHandler(file_handler)
             self.__logger = logger
+        else:
+            self.__logger = logging.getLogger("TigerOpenClient")
         self.__headers = {
             'Content-type': 'application/json;charset=' + self.__config.charset,
             "Cache-Control": "no-cache",
