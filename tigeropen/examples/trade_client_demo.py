@@ -16,9 +16,8 @@ from tigeropen.trade.trade_client import TradeClient
 from tigeropen.common.response import TigerResponse
 from tigeropen.common.request import OpenApiRequest
 from tigeropen.common.consts import Currency, SecurityType, OrderSortBy
-from tigeropen.common.util.contract_utils import stock_contract, option_contract_by_symbol, future_contract, \
-     war_contract_by_symbol, iopt_contract_by_symbol
-from tigeropen.common.util.order_utils import limit_order, limit_order_with_legs, order_leg, algo_order_params, \
+from tigeropen.common.util.contract_utils import stock_contract
+from tigeropen.common.util.order_utils import order_leg, algo_order_params, \
     algo_order
 from tigeropen.tiger_open_config import get_client_config
 
@@ -53,7 +52,7 @@ def get_account_apis():
     # openapi_client.get_filled_orders(start_time='2019-05-01', end_time='2019-05-21')
 
     # 获取订单成交记录, 仅适用于综合账户
-    transactions = openapi_client.get_transactions(symbol='AAPL', sec_type=SecurityType.STK, start_time=1641398400000,
+    openapi_client.get_transactions(symbol='AAPL', sec_type=SecurityType.STK, start_time=1641398400000,
                                                    end_time=1642398400000)
     # transactions = openapi_client.get_transactions(symbol='CL2201', sec_type=SecurityType.FUT)
     # transactions = openapi_client.get_transactions(order_id=24844739769009152)
@@ -183,7 +182,7 @@ def get_account_info():
     response_content = None
     try:
         response_content = openapi_client.execute(request)
-    except Exception as e:
+    except Exception:
         print(traceback.format_exc())
     if not response_content:
         print("failed to execute")

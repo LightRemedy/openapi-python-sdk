@@ -6,7 +6,6 @@ Created on 2018/10/30
 """
 import time
 # from tigeropen.common.consts import QuoteKeyType
-import pandas as pd
 
 from tigeropen.common.consts import StockRankingIndicator, OptionRankingIndicator
 from tigeropen.push.pb.AssetData_pb2 import AssetData
@@ -19,7 +18,6 @@ from tigeropen.push.pb.QuoteBBOData_pb2 import QuoteBBOData
 from tigeropen.push.pb.QuoteBasicData_pb2 import QuoteBasicData
 from tigeropen.push.pb.QuoteDepthData_pb2 import QuoteDepthData
 from tigeropen.push.pb.StockTopData_pb2 import StockTopData
-from tigeropen.push.pb.TradeTickData_pb2 import TradeTickData
 from tigeropen.push.pb.trade_tick import TradeTick
 from tigeropen.common.consts import OrderStatus
 from tigeropen.push.push_client import PushClient

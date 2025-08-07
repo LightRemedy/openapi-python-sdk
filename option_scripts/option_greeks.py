@@ -4,7 +4,6 @@ except ImportError:
     print('QuantLib is required for this script. Please install it with `pip install QuantLib-Python`.')
     exit(1)
 
-from typing import List
 
 # User-editable parameters
 option_type = 'CALL'  # 'CALL' or 'PUT'

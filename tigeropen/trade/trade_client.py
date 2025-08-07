@@ -6,7 +6,7 @@ Created on 2018/9/20
 """
 import logging
 
-from tigeropen.common.consts import THREAD_LOCAL, SecurityType, Market, Currency, Language, OPEN_API_SERVICE_VERSION_V3
+from tigeropen.common.consts import THREAD_LOCAL, SecurityType, Market, Currency, OPEN_API_SERVICE_VERSION_V3
 from tigeropen.common.consts.service_types import CONTRACTS, ACCOUNTS, POSITIONS, ASSETS, ORDERS, ORDER_NO, \
     CANCEL_ORDER, MODIFY_ORDER, PLACE_ORDER, ACTIVE_ORDERS, INACTIVE_ORDERS, FILLED_ORDERS, CONTRACT, PREVIEW_ORDER, \
     PRIME_ASSETS, ORDER_TRANSACTIONS, QUOTE_CONTRACT, ANALYTICS_ASSET, SEGMENT_FUND_AVAILABLE, SEGMENT_FUND_HISTORY, TRANSFER_FUND, \

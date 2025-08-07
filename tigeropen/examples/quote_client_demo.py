@@ -10,7 +10,7 @@ import unittest
 
 import pandas as pd
 from tigeropen.common.consts import Market, QuoteRight, FinancialReportPeriodType, Valuation, \
-    Income, Balance, CashFlow, BalanceSheetRatio, Growth, Leverage, Profitability, IndustryLevel, BarPeriod, \
+    Income, CashFlow, IndustryLevel, BarPeriod, \
     SortDirection, CapitalPeriod
 from tigeropen.common.consts.filter_fields import AccumulateField, StockField, FinancialField, MultiTagField, \
     AccumulatePeriod, FinancialPeriod
@@ -225,7 +225,6 @@ def test_market_scanner():
         if result.total_page:
             for item in result.items:
                 symbol = item.symbol
-                market = item.market
                 # 可以字典的形式获取某个filter的字段对应的值
                 base_filter1_value = item[base_filter1]
                 accumulate_filter_value = item[accumulate_filter]
@@ -304,7 +303,7 @@ class TestQuoteClient(unittest.TestCase):
         print(result)
         print(result.iloc[0]['close'])
         # to python type
-        close = float(result.iloc[0]['close'])
+        float(result.iloc[0]['close'])
 
     def test_get_fund_history_quote(self):
         result = openapi_client.get_fund_history_quote(['LU0476943708.HKD'], begin_time=1691337600000, end_time=1691596800000)

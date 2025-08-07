@@ -22,18 +22,6 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 _sym_db = _symbol_database.Default()
 
 
-from tigeropen.push.pb import SocketCommon_pb2 as tigeropen_dot_push_dot_pb_dot_SocketCommon__pb2
-from tigeropen.push.pb import OrderStatusData_pb2 as tigeropen_dot_push_dot_pb_dot_OrderStatusData__pb2
-from tigeropen.push.pb import PositionData_pb2 as tigeropen_dot_push_dot_pb_dot_PositionData__pb2
-from tigeropen.push.pb import AssetData_pb2 as tigeropen_dot_push_dot_pb_dot_AssetData__pb2
-from tigeropen.push.pb import QuoteData_pb2 as tigeropen_dot_push_dot_pb_dot_QuoteData__pb2
-from tigeropen.push.pb import QuoteDepthData_pb2 as tigeropen_dot_push_dot_pb_dot_QuoteDepthData__pb2
-from tigeropen.push.pb import TradeTickData_pb2 as tigeropen_dot_push_dot_pb_dot_TradeTickData__pb2
-from tigeropen.push.pb import OrderTransactionData_pb2 as tigeropen_dot_push_dot_pb_dot_OrderTransactionData__pb2
-from tigeropen.push.pb import StockTopData_pb2 as tigeropen_dot_push_dot_pb_dot_StockTopData__pb2
-from tigeropen.push.pb import OptionTopData_pb2 as tigeropen_dot_push_dot_pb_dot_OptionTopData__pb2
-from tigeropen.push.pb import KlineData_pb2 as tigeropen_dot_push_dot_pb_dot_KlineData__pb2
-from tigeropen.push.pb import TickData_pb2 as tigeropen_dot_push_dot_pb_dot_TickData__pb2
 
 from tigeropen.push.pb.SocketCommon_pb2 import *
 from tigeropen.push.pb.OrderStatusData_pb2 import *

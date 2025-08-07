@@ -3,9 +3,6 @@
 # @Date    : 2023/2/21
 # @Author  : sukai
 import json
-import time
-import uuid
-from typing import Optional
 
 from tigeropen import __VERSION__
 
@@ -13,7 +10,6 @@ from tigeropen.common.consts.params import P_SDK_VERSION_PREFIX
 from tigeropen.push.pb import Request_pb2, SocketCommon_pb2, Response_pb2
 from tigeropen.push.pb.QuoteBBOData_pb2 import QuoteBBOData
 from tigeropen.push.pb.QuoteBasicData_pb2 import QuoteBasicData
-from tigeropen.push.pb.QuoteData_pb2 import QuoteData
 from tigeropen.push.pb.SocketCommon_pb2 import SocketCommon
 
 

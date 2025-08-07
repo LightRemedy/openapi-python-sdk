@@ -6,7 +6,6 @@ Created on 2018/10/30
 """
 import time
 # from tigeropen.common.consts import QuoteKeyType
-import pandas as pd
 
 from tigeropen.push.push_client import PushClient
 from tigeropen.examples.client_config import get_client_config

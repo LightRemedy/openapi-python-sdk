@@ -15,7 +15,7 @@ request = OpenApiRequest(method=ACCOUNTS, biz_model=account)
 response_content = None
 try:
     response_content = openapi_client.execute(request)
-except Exception as e:
+except Exception:
     print(traceback.format_exc())
 if not response_content:
     print("failed to execute")

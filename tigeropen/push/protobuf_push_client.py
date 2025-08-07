@@ -204,7 +204,7 @@ class ProtobufPushClient(ConnectionListener):
                 else:
                     self.logger.warning(f'unhandled frame: {frame}')
         except Exception:
-            self.logger.error(f'error in on_message ', exc_info=True)
+            self.logger.error('error in on_message ', exc_info=True)
 
     def subscribe_asset(self, account=None):
         """

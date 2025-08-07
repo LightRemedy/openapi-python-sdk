@@ -1,4 +1,3 @@
-import re
 
 PAPER_ACCOUNT_DIGIT_LEN = 17
 
